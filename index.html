@@ -1,62 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Touch Slider - SwiperJS</title>
-    <link rel="stylesheet" href="./assets/css/swiper.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
     <div class="container">
-        <div class="swiper-container">
+        <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="#"><img src="./assets/img/covers/overlord.jpg" class="swiper-slide__cover" /></a>
-                    <a href="#" class="swiper-slide__title">Overlord</a>
+                    <a href="#">
+                        <img src="./assets/img/covers/overlord.jpg" class="swiper-slide__cover">
+                    </a>
+                    <a href="" class="swiper-slide__title">Overlord</a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="./assets/img/covers/kingdom.jpg" class="swiper-slide__cover" /></a>
-                    <a href="#" class="swiper-slide__title">Kingdom</a>
+                    <a href="#">
+                        <img src="./assets/img/covers/kingdom.jpg" class="swiper-slide__cover">
+                    </a>
+                    <a href="" class="swiper-slide__title">Kingdom</a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="./assets/img/covers/hyperdimension-neptunia.jpg" class="swiper-slide__cover" /></a>
-                    <a href="#" class="swiper-slide__title">Hyperdimension Neptunia</a>
+                    <a href="#">
+                        <img src="./assets/img/covers/hyperdimension-neptunia.jpg" class="swiper-slide__cover">
+                    </a>
+                    <a href="" class="swiper-slide__title">Hyperdimension Neptunia</a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="./assets/img/covers/naruto-shippuden.jpg" class="swiper-slide__cover" /></a>
+                    <a href="#">
+                        <img src="./assets/img/covers/naruto-shippuden.jpg" class="swiper-slide__cover">
+                    </a>
                     <a href="#" class="swiper-slide__title">Naruto Shippuden</a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="./assets/img/covers/black-clover.jpg" class="swiper-slide__cover" /></a>
+                    <a href="#">
+                        <img src="./assets/img/covers/black-clover.jpg" class="swiper-slide__cover">
+                    </a>
                     <a href="#" class="swiper-slide__title">Black Clover</a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="./assets/img/covers/boku-no-hero-academia.jpg" class="swiper-slide__cover" /></a>
+                    <a href="#">
+                        <img src="./assets/img/covers/boku-no-hero-academia.jpg" class="swiper-slide__cover">
+                    </a>
                     <a href="#" class="swiper-slide__title">Boku No Hero Academia</a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="./assets/img/covers/kimetsu-no-yaiba.jpg" class="swiper-slide__cover" /></a>
+                    <a href="#">
+                        <img src="./assets/img/covers/kimetsu-no-yaiba.jpg" class="swiper-slide__cover">
+                    </a>
                     <a href="#" class="swiper-slide__title">Kimetsu No Yaiba</a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="./assets/img/covers/bleach.jpg" class="swiper-slide__cover" /></a>
+                    <a href="#">
+                        <img src="./assets/img/covers/bleach.jpg" class="swiper-slide__cover">
+                    </a>
                     <a href="#" class="swiper-slide__title">Bleach</a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="./assets/img/covers/one-piece.jpg" class="swiper-slide__cover" /></a>
+                    <a href="#">
+                        <img src="./assets/img/covers/one-piece.jpg" class="swiper-slide__cover">
+                    </a>
                     <a href="#" class="swiper-slide__title">One Piece</a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="./assets/img/covers/tower-of-god.jpg" class="swiper-slide__cover" /></a>
+                    <a href="#">
+                        <img src="./assets/img/covers/tower-of-god.jpg" class="swiper-slide__cover">
+                    </a>
                     <a href="#" class="swiper-slide__title">Tower Of God</a>
                 </div>
             </div>
         </div>
     </div>
-    <script src="./assets/js/swiper.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            breakpoints: {
+                320: {
+                    spaceBetween: 10
+                },
+                480: {
+                    spaceBetween: 20
+                }
+            }
+        });
+    </script>
 </body>
 </html>
